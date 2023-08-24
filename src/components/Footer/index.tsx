@@ -6,19 +6,29 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className='px-6 mt-16'>
+    <footer className='px-6 mt-16 md:container'>
       <Logo />
-      <p className='mt-8 mb-16'>
-        All rights reserved © Equalizer 2021 Have any problems? Contact us via
-        social media or email us at <br />{' '}
-        <span className='text-body-3 font-bold'>equalizer@example.com</span>
-      </p>
-      <div className='flex mb-16 gap-5'>
-        {socialData.map((item, index) => (
-          <Link key={index} to={item.url}>
-            <img src={item.icon} alt='Social Icon' />
-          </Link>
-        ))}
+      <div className='md:flex md:items-center md:justify-between'>
+        <p className='mt-8 mb-16 md:w-[50%]'>
+          All rights reserved © Equalizer 2021 Have any problems? Contact us via
+          social media or email us at <br />{' '}
+          <span className='text-body-3 font-bold'>equalizer@example.com</span>
+        </p>
+        <div className='flex md:justify-end mb-16 gap-5 md:w-[50%]'>
+          {socialData.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <Link
+                key={index}
+                to={item.url}
+                className='text-2xl text-dark hover:text-orange transition-all'
+              >
+                <Icon />
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </footer>
   );

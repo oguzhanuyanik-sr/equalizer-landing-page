@@ -1,25 +1,36 @@
 import LogoImage from '../assets/logo.svg';
 import Phone from '../assets/illustration-app.png';
-import AppBackground from '../assets/bg-pattern-2.svg';
+import MobilePattern from '../assets/bg-pattern-2.svg';
+import TabletPattern from '../assets/bg-pattern-1.svg';
 import Ios from '../assets/icon-apple.svg';
 import Android from '../assets/icon-android.svg';
-import Facebook from '../assets/icon-facebook.svg';
-import Instagram from '../assets/icon-instagram.svg';
-import Twitter from '../assets/icon-twitter.svg';
+import {
+  AiFillFacebook,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from 'react-icons/ai';
 
 const socialData = [
   {
-    icon: Facebook,
+    icon: AiFillFacebook,
     url: '/',
   },
   {
-    icon: Instagram,
+    icon: AiOutlineInstagram,
     url: '/',
   },
   {
-    icon: Twitter,
+    icon: AiOutlineTwitter,
     url: '/',
   },
 ];
 
-export { LogoImage, Phone, AppBackground, Ios, Android, socialData };
+export {
+  LogoImage,
+  Phone,
+  MobilePattern,
+  TabletPattern,
+  Ios,
+  Android,
+  socialData,
+};

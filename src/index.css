@@ -6,6 +6,15 @@
   body {
     @apply font-plex text-dark overflow-x-hidden;
   }
+
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
 }
 
 @layer components {
@@ -32,6 +41,12 @@
   .bg-first-section {
     background-image: url('./assets/bg-main-mobile.png');
     background-repeat: no-repeat;
-    background-position: 100px -180px;
+    background-position: 150px -350px;
+
+    @media only screen and (min-width: 768px) {
+      background-image: url('./assets/bg-main-tablet.png');
+      background-repeat: no-repeat;
+      background-position: 0 -350px;
+    }
   }
 }
