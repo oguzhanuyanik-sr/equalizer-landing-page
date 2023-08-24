@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Ios, Android } from '../../utils/constants';
 
-const Button = ({ platform }: string) => {
+const Button = ({ platform }: { platform: string }) => {
   const isAndroid = platform === 'android';
 
   return (
     <Link
-      className={`rounded-xl flex justify-center items-center py-5 md:text-[18px] px-2 text-body-1 font-bold transition-all ${
+      className={`flex justify-center items-center py-5 font-bold text-xl md:text-[18px] leading-[34px] px-2 rounded-xl transition-all ${
         isAndroid
           ? 'bg-white text-dark hover:bg-lightOrange hover:text-dark'
           : 'bg-dark text-white mb-4 hover:bg-blue hover:text-white'

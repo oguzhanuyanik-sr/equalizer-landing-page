@@ -1,10 +1,8 @@
-import Logo from '../common/Logo';
-import { socialData } from '../../utils/constants';
 import { Link } from 'react-router-dom';
+import { socialData } from '../../utils/constants';
+import Logo from '../common/Logo';
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className='px-6 mt-16 md:container'>
       <Logo />
@@ -12,7 +10,9 @@ const Footer = (props: Props) => {
         <p className='mt-8 mb-16 md:w-[50%]'>
           All rights reserved © Equalizer 2021 Have any problems? Contact us via
           social media or email us at <br />{' '}
-          <span className='text-body-3 font-bold'>equalizer@example.com</span>
+          <span className='text-base leading-[26px] font-bold'>
+            equalizer@example.com
+          </span>
         </p>
         <div className='flex md:justify-end mb-16 gap-5 md:w-[50%]'>
           {socialData.map((item, index) => {

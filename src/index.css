@@ -8,45 +8,10 @@
   }
 
   img {
-    user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-  }
-}
-
-@layer components {
-  .text-heading-1 {
-    @apply text-[88px] leading-[88px] tracking-[-1px] font-bold;
-  }
-
-  .text-heading-2 {
-    @apply text-[40px] leading-[52px] font-bold;
-  }
-
-  .text-body-1 {
-    @apply text-xl leading-[34px];
-  }
-
-  .text-body-2 {
-    @apply text-lg leading-[28px];
-  }
-
-  .text-body-3 {
-    @apply text-base leading-[26px];
-  }
-
-  .bg-first-section {
-    background-image: url('./assets/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-position: 150px -350px;
-
-    @media only screen and (min-width: 768px) {
-      background-image: url('./assets/bg-main-tablet.png');
-      background-repeat: no-repeat;
-      background-position: 0 -350px;
-    }
   }
 }
