@@ -1,9 +1,16 @@
-import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import FirstSection from './components/FirstSection';
+import AppSection from './components/AppSection';
+import Footer from './components/Footer';
 
-type Props = {};
-
-const App = (props: Props) => {
-  return <div>App</div>;
+const App = () => {
+  return (
+    <BrowserRouter>
+      <FirstSection />
+      <AppSection />
+      <Footer />
+    </BrowserRouter>
+  );
 };
 
 export default App;

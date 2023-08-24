@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-plex text-dark overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .text-heading-1 {
+    @apply text-[88px] leading-[88px] tracking-[-1px] font-bold;
+  }
+
+  .text-heading-2 {
+    @apply text-[40px] leading-[52px] font-bold;
+  }
+
+  .text-body-1 {
+    @apply text-xl leading-[34px];
+  }
+
+  .text-body-2 {
+    @apply text-lg leading-[28px];
+  }
+
+  .text-body-3 {
+    @apply text-base leading-[26px];
+  }
+
+  .bg-first-section {
+    background-image: url('./assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 100px -180px;
+  }
+}
